@@ -1,0 +1,74 @@
+.navbar{
+   padding: 1.2rem 2rem 1.2rem 2rem;
+   background: rgba(0, 0, 0, 0.4);
+   z-index: 3;
+   backdrop-filter: blur(30px);
+   font-family: 'Poppins', sans-serif;
+   letter-spacing: 3px;
+   color: whitesmoke;
+   border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 18px;
+    font-size: 1.5rem;
+    /* position: absolute;
+    right: 2rem;     */
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.nav-links button{
+    background: none;
+    border: none;
+    font-size: 19px;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.nav-links button .drop-icon{
+    font-size: 14px;
+}
+.nav-links button .drop-icon:hover{
+    transition: ease 400ms ease;
+    transform: rotate(180deg);
+}
+.menu{
+    position: fixed;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    left: 14rem;
+    border-radius: 0 0 10px 10px;
+}
+.menu .drop-list div{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+}
+.menu .drop-list .links{
+    text-decoration: none;
+    color: white;
+}
+@media  (max-width:600px) {
+    .nav-icons{
+        display: none;
+    }
+    .navbar-container{
+        justify-content: center;
+    }
+}

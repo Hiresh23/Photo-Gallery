@@ -1,0 +1,112 @@
+@font-face {
+    font-family:"Cute Cartoon";
+    src: url("../../public/Cute\ Cartoon.ttf");
+}
+.home{
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background: linear-gradient( #8074ff, #1205c4,#12089c,#03012b);
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-text{
+    font-family: 'Cute Cartoon';
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+}
+.home-text h1{
+    font-size: 6rem;
+    letter-spacing: 8px;
+    font-weight: 500;
+    
+}
+.home-text small{
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.home-events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    border: solid #877FE7;
+    transform: translate(-30% , 5%);
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 2rem;
+}
+.home-events:hover{
+    background: #031a5b5b;
+    border: none;
+}
+.home-events h2{
+    font-size: 3rem;
+    font-family: 'Inter',sans-serif;
+    color: whitesmoke;
+    letter-spacing: 8px;
+    /* border-bottom: double; */
+}
+.home-events .gallerys{
+    background: rgba(0 ,0 ,0 , 0.4);
+    padding: 1.5rem;
+    width: 120px;
+    border-radius: 2rem;
+    backdrop-filter: blur(40px);
+    z-index: 2;
+    font-family: 'Poppins',sans-serif;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.home-events .gallerys:hover{
+    transform:  rotate(-6deg);
+    background: #3c1ee7be;
+}
+@media screen and (max-width:1024px) {
+    .home-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .home-events{
+        text-align: center;
+        position: relative;
+        left: 4.5rem;
+    }
+    .home-events h2{
+        font-size: 2rem;
+    }
+    .home-text{
+        text-align: center;
+    }
+    .home-text h1{
+        font-size: 4rem;
+    }
+    .home-text small{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width:600px) {
+    .home {
+        gap: 3rem;
+        overflow: scroll;
+    }
+    .home-container{
+        padding-bottom:3rem;
+    }
+}
